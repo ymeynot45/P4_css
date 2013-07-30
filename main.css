@@ -1,3 +1,5 @@
+/* I have no idea where the color: #333; is supposed to go. */
+/* I can't get the font weight of the header a between normal and bold.*/
 html {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -9,6 +11,45 @@ body {
 
 header {
   padding: 10px;
+  background-color: black;
+  position: relative;
+  height: 60px;
+}
+
+header a {
+  color: blue;
+  text-decoration: none;
+  font-weight: bold; 
+}
+
+header a:hover {
+color: #ff0;
+}
+
+header li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+header nav {
+  float: right;
+  margin-right: 0;
+}
+
+header ul {
+  text-align: right;
+  width: 20%;
+  margin-right: 0;
+}
+
+header span{
+  float: left;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
 }
 
 .brand {
@@ -17,6 +58,7 @@ header {
 }
 
 .brand a:hover {
+  float: right;
   text-decoration: underline;
 }
 
@@ -25,7 +67,16 @@ header {
   margin: 0 auto;
 }
 
+.features div { 
+  display: inline-block;
+}
+
 .marketing {
   padding: 10px;
   margin: 1em 0;
+  background-color: #555;
+}
+
+.marketing, h2 p {
+ color: white;
 }
